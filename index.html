@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <h1>Manage your daily expense easily ! Start here!</h1>
+        <form id="newItem">
+            <h4>Add your expense by yourself: </h4>
+            <input type="text" placeholder="add new Expanse here! " size="30"
+            name="getMoney" > 
+            <select name="ItemCate">
+                <option value="gro">Grocery</option>
+                <option value="snack">Snacks & drinks</option>
+                <option value="clothe">Clothing</option>
+                <option value="bill">Billing</option>
+                <option value="rent">Rent</option>
+                <option value="other">Others<Others/option>
+            </select>
+            <head>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <title>jQuery UI Datepicker - Default functionality</title>
+                <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+                <link rel="stylesheet" href="/resources/demos/style.css">
+                <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+                <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+                <script>
+                $( function() {
+                  $( "#datepicker" ).datepicker();
+                } );
+                </script>
+              </head>
+              <body>        
+              <p>Date: <input type="text" id="datepicker"></p>
+              </body>
+              <p><button>Submit button</button></p>
+        </form>
+        <script src="calender.js" ></script>
+        <form id = "uploadPic">
+            <h4>Or upload your receipt and let us help you ;)</h3>
+            <input type="file" name = "addReceipt" accept="image/png, image/jpeg">
+        </form>
+    </body>
+</html>
