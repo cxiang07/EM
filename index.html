@@ -2,48 +2,61 @@
 <html>
 
 <head>
+    <link href="/styles/styles.css" rel="stylesheet">
 </head>
 
 <body>
-    <h1>Manage your daily expense easily ! Start here!</h1>
+    <div class="header">
+        <div class="container">
+            <h1 class="header__title">Manage your daily expense easily !</h2>
+            <h2 class="header__subtitle">Start here!</h2>
+        </div>  
+    </div>
     <form id="newItem">
-        <h4>Add your expense by yourself: </h4>
-        <input type="text" placeholder="add new Expanse here! " size="30" name="getMoney">
-        <select name="ItemCate">
-            <option value="gro">Grocery</option>
-            <option value="snack">Snacks & drinks</option>
-            <option value="clothe">Clothing</option>
-            <option value="bill">Billing</option>
-            <option value="rent">Rent</option>
-            <option value="other">Others<Others /option>
-        </select>
+        <div>
+            <h4>Add your expense by yourself: </h4>
+        </div>
+        <div>
+            <input type="text" placeholder="add new Expanse here! " size="30" name="getMoney">
+            <select class = "dropdown" name="ItemCate">
+                <option value="gro">Grocery</option>
+                <option value="snack">Snacks & drinks</option>
+                <option value="clothe">Clothing</option>
+                <option value="bill">Billing</option>
+                <option value="rent">Rent</option>
+                <option value="other">Others<Others /option>
+            </select>
+        </div>
+        <div>
+                <meta charset="utf-8">
+                <meta name="viewport" content="width=device-width, initial-scale=1">
+                <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+                <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+                <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+                <script>
+                    $(function () {
+                        $("#datepicker").datepicker();
+                    });
+                </script>
 
-        <head>
-            <meta charset="utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-            <script>
-                $(function () {
-                    $("#datepicker").datepicker();
-                });
-            </script>
-        </head>
-
-        <body>
-            <p>Date: <input type="text" id="datepicker"></p>
-        </body>
-        <p><button>Submit button</button></p>
+                <p>Date: <input type="text" id="datepicker"></p>
+        </div>
+        <div>
+            <p><button class="button">Submit button</button></p>
+        </div>
     </form>
-    <!-- <script src="calender.js"></script> -->
-    <h4>Or upload your receipt and let us help you ;)</h4>
+    <div>
+        <!-- <script src="calender.js"></script> -->
+        <h4>Or upload your receipt and let us help you ;)</h4>
+    </div>
+    <div>
         <input type="file" id="uploadPic" onchange="previewFile()"><br>
         <img src="" width="250" alt="Image preview...">
-        <script src="apiPractice.js"></script>
-        <div id ="photoText">
-            
-        </div>
+        <script src="/scripts/apiPractice.js"></script>
+    </div>
+    <div id="photoText">
+
+    </div>
 </body>
 
 </html>

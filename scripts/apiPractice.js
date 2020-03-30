@@ -17,8 +17,6 @@ function previewFile() {
     }
 }
 
-
-
 const sendRequest = (imageData) => {
 
     const request = {
