@@ -2,15 +2,18 @@
 <html>
 
 <head>
-    <link href="/styles/styles.css" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="header">
         <div class="container">
             <h1 class="header__title">Manage your daily expense easily !</h2>
-            <h2 class="header__subtitle">Start here!</h2>
-        </div>  
+                <h2 class="header__subtitle">Start here!</h2>
+        </div>
     </div>
     <form id="newItem">
         <div>
@@ -18,7 +21,7 @@
         </div>
         <div>
             <input type="text" placeholder="add new Expanse here! " size="30" name="getMoney">
-            <select class = "dropdown" name="ItemCate">
+            <select class="dropdown" name="ItemCate">
                 <option value="gro">Grocery</option>
                 <option value="snack">Snacks & drinks</option>
                 <option value="clothe">Clothing</option>
@@ -28,18 +31,18 @@
             </select>
         </div>
         <div>
-                <meta charset="utf-8">
-                <meta name="viewport" content="width=device-width, initial-scale=1">
-                <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-                <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-                <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-                <script>
-                    $(function () {
-                        $("#datepicker").datepicker();
-                    });
-                </script>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            <script>
+                $(function () {
+                    $("#datepicker").datepicker();
+                });
+            </script>
 
-                <p>Date: <input type="text" id="datepicker"></p>
+            <p>Date: <input type="text" id="datepicker"></p>
         </div>
         <div>
             <p><button class="button">Submit button</button></p>
