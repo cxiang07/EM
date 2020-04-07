@@ -59,6 +59,7 @@ a {
 }
 
 .error {
+    margin: 2rem 0;
     color: red;
     font-size: 2rem;
 }
@@ -111,7 +112,7 @@ input {
     padding: .4rem .8rem;
 }
 
-.dropdown {
+.dropdown{
     border-radius:10px;
     border:1px solid #AAAAAA;
     /* border-radius: 0;
@@ -120,6 +121,21 @@ input {
     font-size: 1.4rem;
     font-weight: 300;
     height: 3rem;
+    margin-right: .8rem;
+}
+
+.itemList{
+    margin: 2rem 0;
+    border-radius:10px;
+    border:1px solid #AAAAAA;
+    /* border-radius: 0;
+    border: 1px solid #DEDFE0; */
+    background: white;
+    font-size: 1.8rem;
+    font-weight: 300;
+    height: 3rem;
+    width: 400px;
+    text-align-last:center;
     margin-right: .8rem;
 }
 
