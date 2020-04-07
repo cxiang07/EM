@@ -16,12 +16,15 @@
                 <h2 class="header__subtitle">Start here!</h2>
         </div>
     </div>
-    <form id="newItem">
+    <div id="newItem">
         <div>
             <h4>Add your expense by yourself: </h4>
+            <div class="errorLable">
+            </div>
         </div>
-        <div>
-            <input type="text" placeholder="add new Expanse here! " size="30" name="getMoney">
+        <div class="actions">
+            <input class = 'itemName' type="text" placeholder="add new Expanse here! " size="20">
+            <input class = 'itemMoney' type="text" placeholder="add $ here " size="10">
             <select class="dropdown" name="ItemCate">
                 <option value="gro">Grocery</option>
                 <option value="snack">Snacks & drinks</option>
@@ -43,14 +46,14 @@
                 });
             </script>
 
-            <p>Date: <input type="text" id="datepicker"></p>
+            <p>Date: <input type="text" id="datepicker" class="date"></p>
         </div>
         <div>
-            <p><button class="button">Submit button</button></p>
+            <p><button id = "submit" class="button">Submit button</button></p>
         </div>
-    </form>
+        <script src="itemList.js"></script>
+    </div>
     <div>
-        <!-- <script src="calender.js"></script> -->
         <h4>Or upload your receipt and let us help you ;)</h4>
     </div>
     <div>

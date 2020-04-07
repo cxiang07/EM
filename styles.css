@@ -9,9 +9,11 @@ html {
 }
 
 body {
-  color: #333333;
-  font-family: Helvetica, Arial, sans-serif;
-  font-size: 1.6rem;
+    background:#D7CEC7;
+    color: black;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 1.6rem;
+
 }
 
 button {
@@ -34,9 +36,15 @@ a {
 /* Header */
 
 .header {
-    background-image: linear-gradient(to right, rgb(14, 57, 150) 0%, rgb(31, 111, 177) 51%, rgb(8, 88, 153) 100%);
-  color: white;
-  padding: 1.6rem 0;
+    /* background-image: linear-gradient(to right, rgb(250, 170, 3) 0%,  rgb(255, 219, 0) 51%,   rgb(250, 170, 3)100%); */
+    background-color:#565656 ;
+    color: rgb(226, 214, 214);
+    padding: 1.6rem 0;
+}
+
+.error {
+    color: red;
+    font-size: 2rem;
 }
 
 .header__title {
@@ -49,11 +57,16 @@ a {
   font-weight: 300;
 }
 
+h4 {
+    color: rgb(131, 55, 69);
+    font-size: 100 rem;
+    font-weight: 700;
+    padding: 1.5rem 0;
+}
+
 /* Actions Bar */
 
 .actions {
-    background-color: #F7F7F7;
-    border-bottom: 1px solid #dedfe0;
     padding: .8rem
 }
 
@@ -72,7 +85,7 @@ a {
 
 /* Form Inputs */
 
-.input {
+input {
     border: 1px solid #DEDFE0;
     border-radius: 5px;
     font-size: 1.4rem;
@@ -83,8 +96,10 @@ a {
 }
 
 .dropdown {
-    border-radius: 0;
-    border: 1px solid #DEDFE0;
+    border-radius:10px;
+    border:1px solid #AAAAAA;
+    /* border-radius: 0;
+    border: 1px solid #DEDFE0; */
     background: white;
     font-size: 1.4rem;
     font-weight: 300;
@@ -102,7 +117,7 @@ a {
     text-transform: uppercase;
     transition: 0.5s;
     background-size: 200% auto;
-    color: #FFF;
+    color: rgb(39, 38, 38);
     box-shadow: 0 0 20px #eee;
     border-radius: 10px;
     width: 120px;
@@ -110,7 +125,7 @@ a {
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     display: inline-block;
     border-radius: 25px;
-    background-image: linear-gradient(to right, rgb(16, 63, 163) 0%, rgb(39, 133, 209) 51%, rgb(8, 88, 153) 100%);
+    background-image: linear-gradient(to right,#c09f80 0%,  #ddb896 51%,  #c09f80 100%);
 }
 
 .button:hover {
