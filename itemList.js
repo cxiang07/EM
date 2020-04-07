@@ -3,7 +3,7 @@ document.querySelector('#submit').addEventListener('click', (e) => {
     document.querySelector('.errorLable').innerHTML = '';
     let newItem = document.querySelector('#newItem');
     try {
-        let item = generateItem();
+        let item = generateItem(newItem);
         renderItem(item);
     }
     catch (e) {
