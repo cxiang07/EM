@@ -26,6 +26,10 @@ const generateItem = function (newItem) {
     item['money'] = parseInt(money);
     item['cate'] = cate;
     item['date'] = date;
+    item['id'] = uuidv4();
+    let list = JSON.parse(localStorage.getItem(curr)||"[]");
+    list.push(item);
+    localStorage.setItem(curr,JSON.stringify(list));
     return item;
 };
 

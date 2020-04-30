@@ -37,7 +37,17 @@ button {
 a {
     color: #396684;
 }
-
+/* User info */
+#user,#history{
+    display:inline-block;
+    margin-right:10px;
+    width:150px;
+}
+#main {
+    display:inline-block;
+    margin-right:10px;
+    width:80px;
+}
 
 /* Container */
 

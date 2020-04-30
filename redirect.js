@@ -5,5 +5,5 @@ subBt.addEventListener('click',function(e){
     e.preventDefault();
     const id = userID.value;
     localStorage.setItem('cur',id);
-    location.assign('/emBody.html');
+    location.assign('/manager.html');
 })
