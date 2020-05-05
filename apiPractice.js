@@ -1,4 +1,4 @@
-const apiKey = 'AIzaSyCMpEvY5VIq-coG-5xkEfREJMyYptEBcGI';
+const apiKey = 'AIzaSyDsUpMgv7hgyz-eh771qHEN3yzZL9ggXZQ';
 const url = `https://vision.googleapis.com/v1/images:annotate?key=${apiKey}`;
 const detectionType = 'TEXT_DETECTION';
 
@@ -41,6 +41,7 @@ const sendRequest = (imageData) => {
         if (xhr.readyState == 4 && xhr.status == 200) {
             let json = JSON.parse(xhr.responseText);
             let textData = json.responses[0].textAnnotations[0].description;
+            window.console.log(json);
             let textResult = document.querySelector('#photoText');
             textResult.innerHTML = '';
             let title = document.createElement('h4');
