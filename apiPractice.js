@@ -1,4 +1,4 @@
-const apiKey = 'AIzaSyDsUpMgv7hgyz-eh771qHEN3yzZL9ggXZQ';
+const apiKey = 'AIzaSyCnBhvmTSt5ArxICjTd9jpmWkCoALYv4XI';
 const url = `https://vision.googleapis.com/v1/images:annotate?key=${apiKey}`;
 const detectionType = 'TEXT_DETECTION';
 
