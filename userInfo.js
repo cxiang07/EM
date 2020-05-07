@@ -34,7 +34,7 @@ const generateExpDOM = function(oneExp){
         renderExpense();
     })
 
-    textEl.textContent = `${oneExp.date} - ${oneExp.name} - ${oneExp.money}`;
+    textEl.textContent = `${oneExp.cate} -- spend ${oneExp.money}$ for ${oneExp.name} on ${oneExp.date} `;
     expEl.appendChild(textEl)
 
     return expEl;

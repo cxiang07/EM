@@ -36,11 +36,7 @@ const generateItem = function (newItem) {
 const renderItem = function (item) {
     const title = document.createElement('h4');
     title.textContent = "Here is the result";
-    const renderResult = document.createElement('select');
-    renderResult.className = "itemList";
-    const oneItem = document.createElement('option');
-    oneItem.text = `${item.cate}  :  Spent  ${item.money} $  on  ${item.date}  for  ${item.name}`;
-    renderResult.options.add(oneItem,1);
+    const renderResult = generateExpDOM(item);
     document.querySelector('.renderItem').appendChild(title);
     document.querySelector('.renderItem').appendChild(renderResult);
 }

@@ -55,7 +55,7 @@ a {
     display: table;
     width: 100%;
     max-width: 60rem;
-    margin: 0 auto;
+    margin: auto;
     padding: 0 1.6rem;
 }
 
@@ -211,7 +211,7 @@ input {
 
 /* Note List Item */
 
-.list-item {
+/* .list-item {
     text-decoration: none;
     color: #333333;
     background: #F7F7F7;
@@ -236,7 +236,7 @@ input {
     font-size: 1.4rem;
     font-weight: 300;
     font-style: italic;
-}
+} */
 /*
 .empty-message {
     text-align: center;
