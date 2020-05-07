@@ -35,16 +35,21 @@ const generateExpDOM = function(oneExp){
     })
 
     textEl.textContent = `${oneExp.cate} -- spend ${oneExp.money}$ for ${oneExp.name} on ${oneExp.date} `;
-    expEl.appendChild(textEl)
-
+    expEl.appendChild(textEl);
+    expEl.className = 'list-item';
     return expEl;
 }
 
+
 const renderExpense = function(){
     allExp = JSON.parse(localStorage.getItem(curr));
-    document.querySelector('#exp').innerHTML = '';
+    const render = document.querySelector('.renderItem');
+    render.innerHTML = '';
+    let title = document.createElement('h4');
+    title.textContent = "Expense summary💰";
+    render.append(title);
     allExp.forEach(function (oneExp) {
         const one = generateExpDOM(oneExp)
-        document.getElementById('exp').appendChild(one)
+        render.appendChild(one)
     })
 }

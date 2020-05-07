@@ -12,6 +12,11 @@ document.querySelector('#submit').addEventListener('click', (e) => {
     }
 });
 
+document.querySelector('.history').addEventListener('click',(e)=>{
+    e.preventDefault();
+    renderExpense();
+});
+
 const generateItem = function (newItem) {
     let name = newItem.querySelector('.itemName').value;
     let money = newItem.querySelector('.itemMoney').value;
