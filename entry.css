@@ -1,9 +1,6 @@
 * {
     box-sizing: border-box;
 }
-html {
-    font-size: 70%;
-  }
 
 body {
     font-family: 'Montserrat', sans-serif;
@@ -26,7 +23,7 @@ a {
     /* background-image: linear-gradient(to right, rgb(250, 170, 3) 0%,  rgb(255, 219, 0) 51%,   rgb(250, 170, 3)100%); */
     background-color:rgb(32, 31, 31);
     color: rgb(247, 240, 152);
-    margin-bottom: 8%;
+    margin-bottom: 7%;
 }
 
 .header__title {
@@ -45,7 +42,7 @@ a {
     box-sizing: block;
     text-align: center;
     margin: auto;
-    width: 45%;
+    width: 40%;
     background-color:rgb(32, 31, 31);
     padding: 10px;
     font-size: 2rem;
@@ -67,7 +64,7 @@ input {
     width: 50%;
     border: 1px solid #DEDFE0;
     border-radius: 5px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 200;
     height: 1.8rem;
     margin: 10px;
@@ -113,6 +110,6 @@ input {
     display: block;
     position:fixed;
     bottom:0;
-    width: 20%;
-    left: 40%;
+    width: 18%;
+    left: 41%;
 }

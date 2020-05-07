@@ -41,6 +41,7 @@ const generateItem = function (newItem) {
 const renderItem = function (item) {
     const title = document.createElement('h4');
     title.textContent = "Here is the result";
+    title.className = 'list-title';
     const renderResult = generateExpDOM(item);
     document.querySelector('.renderItem').appendChild(title);
     document.querySelector('.renderItem').appendChild(renderResult);
@@ -48,7 +49,8 @@ const renderItem = function (item) {
 
 const renderError = function (e) {
     let title = document.createElement('h4');
-    title.textContent = "Error : "
+    title.textContent = "Error : ";
+    title.className = 'list-title';
     let errorChild = document.createElement('p');
     errorChild.className = 'error';
     errorChild.textContent = e.message;

@@ -217,7 +217,7 @@ input {
 .list-item {
     width: 80%;
     border-radius: 15px;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     color: rgb(247, 240, 152);
     background-color:rgb(32, 31, 31);
@@ -229,4 +229,22 @@ input {
 
 .list-item:hover {
     background: #616157;
+}
+
+.list-title{
+    font-size: 1.8rem;
+    margin-bottom: .4rem
+}
+
+.list-summary {
+    width: 80%;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(247, 240, 152);
+    background-color:rgb(32, 31, 31);
+    margin: 1.3rem 0;
+    padding: 1.6rem;
+    display: block;
+    transition: background .3s ease;
 }

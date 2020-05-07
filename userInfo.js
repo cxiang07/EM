@@ -46,10 +46,23 @@ const renderExpense = function(){
     const render = document.querySelector('.renderItem');
     render.innerHTML = '';
     let title = document.createElement('h4');
+    title.className = 'list-title'
     title.textContent = "Expense summary💰";
     render.append(title);
+    render.append(generateSummary());
     allExp.forEach(function (oneExp) {
         const one = generateExpDOM(oneExp)
         render.appendChild(one)
     })
+}
+
+const generateSummary = function(){
+    let totalmoney = 0;
+    let sum = document.createElement('h4');
+    sum.className = 'list-summary'
+    allExp.forEach(function(oneExp){
+        totalmoney+= oneExp.money;
+    });
+    sum.textContent = `You spend ${totalmoney}$💰in total.`;
+    return sum;
 }
