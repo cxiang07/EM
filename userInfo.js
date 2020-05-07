@@ -48,8 +48,8 @@ const renderExpense = function(){
     let title = document.createElement('h4');
     title.className = 'list-title'
     title.textContent = "Expense summary💰";
-    render.append(title);
-    render.append(generateSummary());
+    document.querySelector('.renderTitle').innerHTML = '';
+    document.querySelector('.renderTitle').append(generateSummary());
     allExp.forEach(function (oneExp) {
         const one = generateExpDOM(oneExp)
         render.appendChild(one)
