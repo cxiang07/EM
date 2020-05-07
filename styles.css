@@ -5,11 +5,11 @@
 }
 
 html {
-  font-size: 62.5%;
+  font-size: 70%;
 }
 
 body {
-    background:#D7CEC7;
+    background:rgb(254, 216, 82);
     color: black;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1.6rem;
@@ -35,7 +35,7 @@ button {
 }
 
 a {
-    color: #396684;
+  color:   rgb(126, 120, 98);
 }
 /* User info */
 #user,#history{
@@ -46,7 +46,7 @@ a {
 #main {
     display:inline-block;
     margin-right:10px;
-    width:80px;
+    width:100px;
 }
 
 /* Container */
@@ -63,9 +63,10 @@ a {
 
 .header {
     /* background-image: linear-gradient(to right, rgb(250, 170, 3) 0%,  rgb(255, 219, 0) 51%,   rgb(250, 170, 3)100%); */
-    background-color:#565656 ;
-    color: rgb(226, 214, 214);
+    background-color:rgb(32, 31, 31);
+    color: rgb(247, 240, 152);
     padding: 1.6rem 0;
+    margin: 0;
 }
 
 .error {
@@ -85,7 +86,7 @@ a {
 }
 
 h4 {
-    color: rgb(131, 55, 69);
+    color: rgb(32, 31, 31);
     font-size: 100 rem;
     font-weight: 700;
     padding: 1.5rem 0;
@@ -167,7 +168,7 @@ input {
     transition: all 0.3s cubic-bezier(.25,.8,.25,1);
     display: inline-block;
     border-radius: 25px;
-    background-image: linear-gradient(to right,#c09f80 0%,  #ddb896 51%,  #c09f80 100%);
+    background-image: linear-gradient(to right, rgb(196, 152, 32) 0%,  rgb(254, 216, 82) 51%, rgb(196, 152, 32) 100%);
 }
 
 .button:hover {
@@ -210,7 +211,7 @@ input {
 
 /* Note List Item */
 
-/* .list-item {
+.list-item {
     text-decoration: none;
     color: #333333;
     background: #F7F7F7;
@@ -236,7 +237,7 @@ input {
     font-weight: 300;
     font-style: italic;
 }
-
+/*
 .empty-message {
     text-align: center;
     margin: 3.2rem 0;
