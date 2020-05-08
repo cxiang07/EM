@@ -2,6 +2,7 @@ document.querySelector('#submit').addEventListener('click', (e) => {
     e.preventDefault();
     document.querySelector('.errorLable').innerHTML = '';
     document.querySelector('.renderItem').innerHTML = '';
+    document.querySelector('.renderTitle').innerHTML = '';
     let newItem = document.querySelector('#newItem');
     try {
         let item = generateItem(newItem);
