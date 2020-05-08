@@ -2,11 +2,10 @@
   "name": "expense-manager",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "input.js",
   "scripts": {
-    "build": "babel src/index.js -o public/scripts/bundle.js --presets env --watch",
-    "server" :"live-server public"
-
+    "dev-server": "webpack-dev-server --mode development",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -19,8 +18,15 @@
   },
   "homepage": "https://github.com/ChaoyuXiang/Refactor-expense-Manager#readme",
   "dependencies": {
-    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^7.1.4",
+    "babel-polyfill": "^6.26.0",
     "babel-preset-env": "^1.6.1",
-    "live-server": "^1.2.1"
+    "live-server": "^1.2.0",
+    "moment": "^2.22.1",
+    "uuid": "^3.2.1",
+    "webpack": "^4.5.0",
+    "webpack-cli": "^2.0.14",
+    "webpack-dev-server": "^3.1.3"
   }
 }
