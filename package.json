@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "babel src/index.js -o public/scripts/bundle.js --presets env --watch",
+    "server" :"live-server public"
+
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,8 @@
   },
   "homepage": "https://github.com/ChaoyuXiang/Refactor-expense-Manager#readme",
   "dependencies": {
-    "babel-preset-env": "^1.6.1"
+    "babel": "^6.23.0",
+    "babel-preset-env": "^1.6.1",
+    "live-server": "^1.2.1"
   }
 }
