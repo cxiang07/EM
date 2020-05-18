@@ -1,9 +1,9 @@
-const subBt = document.getElementById('submit-user');
+const idSubBt = document.getElementById('id-submit');
 const userID = document.getElementById('user-id');
 
-subBt.addEventListener('click',function(e){
+idSubBt.addEventListener('click',function(e){
     e.preventDefault();
     const id = userID.value;
     localStorage.setItem('cur',id);
     location.assign('manager.html');
-})
+});

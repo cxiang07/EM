@@ -1,255 +1,115 @@
 * {
-    box-sizing: border-box;
-    margin: 1px ;
-    padding: 10;
+    margin: 0;
+    position: relative;
 }
 
-html {
-    font-size: 70%;
+.img{
+    width: 50%;
+    margin-left:25% ;
 }
 
-body {
+html,body {
+    font-family: 'Balsamiq Sans', cursive;
     background:rgb(254, 216, 82);
-    color: black;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 1.6rem;
-
+    height: 100%;
 }
-.splitLeft {
-    left: 0;
-    position: absolute;
-    height: 100vh;
-    width: 50%;
-  }
-
-  .splitRight {
-    right: 0;
-    position: absolute;
-    height: 100vh;
-    width: 50%;
-    right: 0;
-  }
-
-button {
-  cursor: pointer;
-}
-
-a {
-  color:   rgb(126, 120, 98);
-}
-
-h4 {
-    color: rgb(32, 31, 31);
-    font-weight: 700;
-    padding: 1.5rem 0;
-}
-
-/* User info */
-#user{
-    display:inline-block;
-    margin-right:10px;
-    width:200px;
-    font-size: 1.5rem;
-}
-#main {
-    display:inline-block;
-    margin-right:5px;
-    width:100px;
-}
-
-/* Container */
-
-.container {
-    display: table;
-    width: 100%;
-    max-width: 60rem;
-    margin: auto;
-    padding: 0 1.6rem;
-}
-
-/* Header */
 
 .header {
-    /* background-image: linear-gradient(to right, rgb(250, 170, 3) 0%,  rgb(255, 219, 0) 51%,   rgb(250, 170, 3)100%); */
     background-color:rgb(32, 31, 31);
     color: rgb(247, 240, 152);
-    padding: 1.6rem 0;
-    margin: 0;
-}
-
-.error {
-    margin: 2rem 0;
-    color: red;
-    font-size: 2rem;
-}
-
-.header__title {
-  font-size: 3.2rem;
-  margin-bottom: .4rem;
-}
-
-.header__subtitle {
-  font-size: 1.6rem;
-  font-weight: 300;
-}
-
-/* Actions Bar */
-
-.actions {
-    padding: .8rem
-}
-
-.actions__container {
-    align-items: center;
-    display: flex;
-    max-width: 60rem;
-    margin: 0 auto;
-    min-height: 3rem;
-    padding: 0 1.6rem;
-}
-
-.actions__container--spaced {
-    justify-content: space-between
-}
-
-/* Form Inputs */
-
-input {
-    border: 1px solid #DEDFE0;
-    border-radius: 5px;
-    font-size: 1.4rem;
-    font-weight: 300;
-    height: 3rem;
-    margin-right: .8rem;
-    padding: .4rem .8rem;
-}
-
-.dropdown{
-    border-radius:10px;
-    border:1px solid #AAAAAA;
-    /* border-radius: 0;
-    border: 1px solid #DEDFE0; */
-    background: white;
-    font-size: 1.4rem;
-    font-weight: 300;
-    height: 3rem;
-    margin-right: .8rem;
-}
-
-.itemList{
-    margin: 2rem 0;
-    border-radius:10px;
-    border:1px solid #AAAAAA;
-    /* border-radius: 0;
-    border: 1px solid #DEDFE0; */
-    background: white;
-    font-size: 1.8rem;
-    font-weight: 300;
-    height: 3rem;
-    width: 400px;
-    text-align-last:center;
-    margin-right: .8rem;
-}
-
-.button {
-    /* background: #2965d4; */
-    margin: 10px;
-    font-family: "Arial Black";
-    font-size: 10px;
-    padding: 10px;
+    width: 100%;
+    margin-bottom: .4rem;
     text-align: center;
-    text-transform: uppercase;
-    transition: 0.5s;
-    background-size: 200% auto;
-    color: rgb(39, 38, 38);
-    box-shadow: 0 0 20px #eee;
-    border-radius: 10px;
-    width: 150px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    position: relative;
+}
+
+.header-title {
+    padding: 0.5em;
+    font-size: 1.5em;
+    text-align: center;
+  }
+
+.header-subtitle {
+    padding: 2%;
+    font-size: 1em;
+    padding-bottom: 1em;
+    color: rgb(247, 240, 152);
+}
+
+.main{
+    border-radius: 5vw;
+    text-align: center;
+    margin-top :35%;
+    width: 70%;
+    margin-left: 15%;
+    background-color:rgb(32, 31, 31);
+    position: relative;
+}
+
+
+
+.subtitle{
+   padding: 5%;
+   font-size: 1.2rem;
+   color: rgb(247, 240, 152);
+}
+
+
+#user-id {
+    width: 50%; 
+    margin: 5%;  
+    border: 10% solid #DEDFE0;
+    border-radius: 5vw;
+    font-size: 0.8em;
+    font-weight: 200;
+    text-align: center;
+}
+
+button {
+    margin: 5%;
+    margin-bottom: 10%;
+    cursor: pointer;
     display: inline-block;
-    border-radius: 25px;
+    width: 50%;
+    font-size: 0.8em;
+    font-weight: bold;
+    text-align: center;
+    color: rgb(39, 38, 38);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    border-radius: 5vw;
     background-image: linear-gradient(to right, rgb(196, 152, 32) 0%,  rgb(254, 216, 82) 51%, rgb(196, 152, 32) 100%);
 }
 
-.button:hover {
-    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-    background-position: right center;
-}
 
-.button--secondary {
-    background: #888888;
-    border-bottom: 2px solid #717171;
-}
-
-.button--secondary:hover {
-    background: #6E6E6E;
-}
-
-
-
-/* Note editor */
-
-.title-input {
-    border: 1px solid #DEDFE0;
-    font-size: 2rem;
-    font-weight: 300;
-    display: block;
-    margin: 2.4rem 0;
-    padding: .8rem;
-    width: 100%;
-}
-
-.input {
-    border: 1px solid #DEDFE0;
-    font-family: inherit;
-    font-size: 1.6rem;
-    font-weight: 300;
-    display: block;
-    margin: 2.4rem 0;
-    min-height: 15rem;
-    padding: .8rem;
-    width: 100%;
-}
-
-/* Note List Item */
-
-.list-item {
-    width: 80%;
-    border-radius: 15px;
-    text-align: left;
-    text-decoration: none;
-    color: rgb(247, 240, 152);
-    background-color:rgb(32, 31, 31);
-    margin: 1.3rem 0;
-    padding: 1.6rem;
-    display: block;
-    transition: background .3s ease;
-}
-
-.list-item:hover {
-    background: #616157;
-}
-
-.list-title{
-    font-size: 1.8rem;
-    margin-bottom: .4rem
-}
-
-.list-summary {
-    width: 80%;
-    border-radius: 15px;
-    text-align: center;
-    text-decoration: none;
-    color: rgb(247, 240, 152);
-    background-color:rgb(32, 31, 31);
-    margin: 1.3rem 0;
-    padding: 1.6rem;
-    display: block;
-    transition: background .3s ease;
-}
-
-.renderItem{
-    height: 60%;
-    overflow-y: scroll;
+@media (min-width : 600px){
+    .header-title {
+        font-size: 2em;
+        padding: 1%;
+    }
+    .header-subtitle {
+        font-size: 1.5em;
+        padding: 1%;
+    }
+    .main{
+        margin-top :12.5%;
+        width: 35%;
+        margin-left: 32.5%;
+    }
+    .subtitle{
+        font-size: 1.5em;
+        padding: 3%;
+    }
+    input,button{
+        font-size: 1em;
+        margin: 3%;
+        height: 2.5em;
+    }
+    button{
+        margin-bottom: 10%;
+    }
+    .img{
+        width: 20%;
+        margin-left:40% ;
+    }
+    
 }

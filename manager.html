@@ -1,90 +1,80 @@
-<!DOCTYPE html>
 <html>
+<header>
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width,initial-scale = 1.0">
+    <link href="styles.css" type="text/css" rel="stylesheet">
+    <link href="mainStyle.css" type="text/css" rel="stylesheet">
+    <link rel="shortcut icon" type="docs/x-icon" href="docs/image/budget-icon.ico">
+</header>
+<title>
+    Expense Manager
+</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="styles.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="budget-icon.ico">
-</head>
-<title>Expense Manager</title>
-
-<body>
+<body class="main-page">
     <div class="header">
-        <div class="container">
-            <h1 class="header__title">Manage your daily expense easily 💻</h2>
-                <h2 class="header__subtitle">--Chaoyu Xiang</h2>
+        <h1 class="header-title">Manage your Expense 💰 </h1>
+        <h3 class="header-subtitle">--Chaoyu Xinag</h3>
+    </div>
+    <script src="userInfo.js"></script>
+    <div class="menu">
+        <a class="login-page" href="index.html">Login Page</a>
+        <p id="user" style="display:inline"></p>
+        <script>loadUser()</script>
+        <a class="post-history" href="#" onclick="renderExpense()">Post History</a>
+    </div>
+    <div class="new-record left">
+        <input class='record-name' type="text" placeholder="add new Expanse here! ">
+        <div class="name-mon">
+            <input class='record-money' type="text" placeholder="add $ here ">
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+            <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+            <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+            <script>
+                $(function () {
+                    $("#datepicker").datepicker();
+                });
+            </script>
+            <p class="date">Date: <input type="text" id="datepicker" class="record-date"></p>
+        </div>
+        <div class="cate">
+            <p>What was that for?</p>
+            <div class="record-cate">
+                <input type="checkbox" id="grocery">
+                <label for="grocery"></label>
+            </div>
+            <div class="record-cate">
+                <input type="checkbox" id="snack">
+                <label for="snack"></label>
+            </div>
+            <div class="record-cate">
+                <input type="checkbox" id="cloth">
+                <label for="cloth"></label>
+            </div>
+            <div class="record-cate">
+                <input type="checkbox" id="rent">
+                <label for="rent"></label>
+            </div>
+        </div>
+        <div class="submit">
+            <button class="post-submit">Submit</button>
+        </div>
+        <h3>Or upload your receipt and let us help you 💁🏻‍♂️</h3>
+        <input type="file" id="uploadPic" onchange="previewFile()"><br>
+        <div class="photo-area">
+            <div class="pic">
+                <!-- <img src="" width="250" alt="Image preview..."> -->
+                <script src="photoProcesser.js"></script>
+            </div>
+            <div id="photoText"></div>
         </div>
     </div>
-    <div class="userInfo">
-        <script src="userInfo.js"></script>
-        <div>
-            <h4 id="user">
-            </h4>
-            <a id="main" href="index.html">Main page </a>
-            <button class="history button">Expense history</button>
-            <script>userInfo()</script>
-        </div>
-        
+   
+    <div class="right">
     </div>
-    <section class="container">
-        <div class="splitLeft">
-            <div id="newItem">
-                <div>
-                    <h4>Add your expense by yourself: </h4>
-                </div>
-                <div class="actions">
-                    <input class='itemName' type="text" placeholder="add new Expanse here! " size="20">
-                    <input class='itemMoney' type="text" placeholder="add $ here " size="10">
-                    <select class="dropdown" name="ItemCate">
-                        <option value="Grocery">Grocery</option>
-                        <option value="Snacks">Snacks & drinks</option>
-                        <option value="Clothing">Clothing</option>
-                        <option value="Billing">Billing</option>
-                        <option value="Rent">Rent</option>
-                        <option value="Others">Others</option>
-                    </select>
-                </div>
-                <div>
-                    <meta charset="utf-8">
-                    <meta name="viewport" content="width=device-width, initial-scale=1">
-                    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-                    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-                    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-                    <script>
-                        $(function () {
-                            $("#datepicker").datepicker();
-                        });
-                    </script>
-
-                    <p>Date: <input type="text" id="datepicker" class="date"></p>
-                </div>
-                <div>
-                    <p><button id="submit" class="button">Submit button</button></p>
-                </div>
-                <script src="itemList.js"></script>
-                <script src="uuidGen.js"></script>
-                <script src="userInfo.js"></script>
-            </div>
-            <div>
-                <h4>Or upload your receipt and let us help you ;)</h4>
-            </div>
-            <div>
-                <input type="file" id="uploadPic" onchange="previewFile()"><br>
-                <img src="" width="250" alt="Image preview...">
-                <script src="apiPractice.js"></script>
-            </div>
-            <div id="photoText">
-
-            </div>
-        </div>
-        <div class="splitRight">
-            <div class="errorLable"></div>
-            <div class="renderTitle"></div>
-            <div class="renderItem"></div>
-        </div>
-    </section>
+    <script src="uuidGen.js"></script>
+    <script src="itemList.js"></script>
 </body>
 
 </html>

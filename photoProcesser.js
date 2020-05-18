@@ -3,7 +3,11 @@ const url = `https://vision.googleapis.com/v1/images:annotate?key=${apiKey}`;
 const detectionType = 'TEXT_DETECTION';
 
 function previewFile() {
-    const preview = document.querySelector('img');
+    document.querySelector('.pic').innerHTML = '';
+    document.querySelector('.right').innerHTML = '';
+    const preview = document.createElement('img');
+    document.querySelector('.pic').appendChild(preview);
+    preview.width = 250;
     const file = document.querySelector('#uploadPic').files[0];
     const reader = new FileReader();
     reader.addEventListener("load", function () {
