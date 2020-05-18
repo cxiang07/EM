@@ -93,12 +93,14 @@ const generateExpDOM = function(oneExp){
         removeExp(oneExp.id);
         renderExpense();
     });
+    if(oneExp.cate.length != 0){
     oneExp.cate.forEach((oneCate)=>{
         let oneEmoji = document.createElement('label');
         oneEmoji.textContent = cateEmoji(oneCate);
         oneEmoji.className = 'emoji'
         expEl.appendChild(oneEmoji);
     })
+}
     textEl.textContent = `spend ${oneExp.money}$ for ${oneExp.name}`;
     expEl.appendChild(textEl);
     expEl.className = 'one-record';
