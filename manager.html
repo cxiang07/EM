@@ -13,14 +13,14 @@
 <body class="main-page">
     <div class="header">
         <h1 class="header-title">Manage your Expense 💰 </h1>
-        <h3 class="header-subtitle">--Chaoyu Xinag</h3>
+        <h3 class="header-subtitle">--Chaoyu Xiang</h3>
     </div>
     <script src="userInfo.js"></script>
     <div class="menu">
         <a class="login-page" href="index.html">Login Page</a>
         <p id="user" style="display:inline"></p>
         <script>loadUser()</script>
-        <a class="post-history" href="#" onclick="renderExpense()">Post History</a>
+        <a class="record-history" href="#" onclick="renderExpense()">Record History</a>
     </div>
     <div class="new-record left">
         <input class='record-name' type="text" placeholder="add new Expanse here! ">
@@ -60,11 +60,10 @@
         <div class="submit">
             <button class="post-submit">Submit</button>
         </div>
-        <h3>Or upload your receipt and let us help you 💁🏻‍♂️</h3>
+        <h4>Or upload your receipts and recognize text by us!</h4>
         <input type="file" id="uploadPic" onchange="previewFile()"><br>
         <div class="photo-area">
             <div class="pic">
-                <!-- <img src="" width="250" alt="Image preview..."> -->
                 <script src="photoProcesser.js"></script>
             </div>
             <div id="photoText"></div>
@@ -73,6 +72,30 @@
    
     <div class="right">
     </div>
+    <footer class="site-footer" role="contentinfo">
+        <div class="about-me">
+            <h3>-About me💁🏻‍♂️-</h3>
+            <ul>
+                <li>
+                    <a href="https://github.com/ChaoyuXiang" target="_blank">
+                        <img src="docs/image/github.png" alt="github Logo" class="gh-icon">
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/chaoyuxiang/" target="_blank">
+                        <img src="docs/image/linkedin.png" alt="linkedin Logo" class="l-icon"></a>
+                </li>
+                <li>
+                    <a href="https://www.facebook.com/chaoyuX" target="_blank">
+                        <img src="docs/image/facebook.png" alt="fb Logo" class="fb-icon"></a>
+                </li>
+                <li>
+                    <a href="https://www.instagram.com/chaoyu_xiang/" target="_blank">
+                        <img src="docs/image/ins.png" alt="ins Logo" class="ins-icon"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
     <script src="uuidGen.js"></script>
     <script src="itemList.js"></script>
 </body>

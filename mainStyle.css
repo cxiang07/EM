@@ -31,7 +31,7 @@
 }
 
 
-a{
+.login-page,.record-history{
     color: rgb(197, 122, 37);
     font-size: 1em;
     margin: 3%;
@@ -175,6 +175,44 @@ input:checked + label{
     font-size: 1.3rem;
 }
 
+ul{
+    padding-left: 0;
+}
+
+.site-footer{
+    width: 100%;
+	text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+}
+
+.about-me{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+
+.about-me ul li {
+	display: inline;
+	margin: 0 5px;
+}
+
+.fb-icon,.l-icon,.gh-icon,.ins-icon{
+    margin: 10px;
+    margin-top: .625em;
+	width: 30px;
+	height: 30px;
+    border-radius: 25px;
+    opacity: 0.8;
+}
+
+.fb-icon:hover,.l-icon:hover,.gh-icon:hover,.ins-icon:hover{
+     transform: scale(1.2);
+     opacity: 1;
+}
+
 
 @media(min-width :600px){
     h3{
@@ -246,5 +284,12 @@ input:checked + label{
         height: 60%;
         width: 50%;
         right: 0;
+    }
+    .fb-icon,.l-icon,.gh-icon,.ins-icon{
+        margin-top: .625em;
+        width: 40px;
+        height: 40px;
+        border-radius: 25px;
+        opacity: 0.8;
     }
 }
