@@ -4,7 +4,8 @@ document.querySelector('.post-submit').addEventListener('click', (e) => {
     e.preventDefault();
     document.querySelector('.pic').innerHTML = '';
     document.querySelector('#photoText').innerHTML = '';
-    document.querySelector('.right').innerHTML = '';
+    document.querySelector('.records').innerHTML = '';
+    document.querySelector('.record-title').innerHTML = '';
     let newItem = document.querySelector('.new-record');
     try {
         let item = generateItem(newItem);
@@ -46,8 +47,8 @@ const renderItem = function (item) {
     title.textContent = "Here is the result";
     title.className = 'record-title';
     const renderResult = generateExpDOM(item);
-    document.querySelector('.right').appendChild(title);
-    document.querySelector('.right').appendChild(renderResult);
+    document.querySelector('.record-title').appendChild(title);
+    document.querySelector('.records').appendChild(renderResult);
 }
 
 const renderError = function (e) {
@@ -57,8 +58,8 @@ const renderError = function (e) {
     let errorChild = document.createElement('p');
     errorChild.className = 'error-message';
     errorChild.textContent = e.message;
-    document.querySelector('.right').appendChild(title);
-    document.querySelector('.right').appendChild(errorChild);
+    document.querySelector('.record-title').appendChild(title);
+    document.querySelector('.records').appendChild(errorChild);
 }
 
 const saveExp = function (allExp) {
@@ -110,15 +111,15 @@ const generateExpDOM = function(oneExp){
 
 const renderExpense = function(){
     let allExp = JSON.parse(localStorage.getItem(curr));
-    const render = document.querySelector('.right');
+    const render = document.querySelector('.records');
     render.innerHTML = '';
     document.querySelector('.pic').innerHTML = '';
     document.querySelector('#photoText').innerHTML = '';
     let title = document.createElement('h3');
     title.className = 'record-title'
     title.textContent = "Expense summary💰";
-    document.querySelector('.right').innerHTML = '';
-    document.querySelector('.right').append(generateSummary());
+    document.querySelector('.result-title').innerHTML = '';
+    document.querySelector('.result-title').append(generateSummary());
     allExp.forEach(function (oneExp) {
         const one = generateExpDOM(oneExp)
         render.appendChild(one)
