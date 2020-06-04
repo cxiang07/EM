@@ -5,7 +5,7 @@ document.querySelector('.post-submit').addEventListener('click', (e) => {
     document.querySelector('.pic').innerHTML = '';
     document.querySelector('#photoText').innerHTML = '';
     document.querySelector('.records').innerHTML = '';
-    document.querySelector('.record-title').innerHTML = '';
+    document.querySelector('.result-title').innerHTML = '';
     let newItem = document.querySelector('.new-record');
     try {
         let item = generateItem(newItem);
@@ -45,20 +45,20 @@ const getTime = function(){
 const renderItem = function (item) {
     const title = document.createElement('h3');
     title.textContent = "Here is the result";
-    title.className = 'record-title';
+    title.className = 'result-title';
     const renderResult = generateExpDOM(item);
-    document.querySelector('.record-title').appendChild(title);
+    document.querySelector('.result-title').appendChild(title);
     document.querySelector('.records').appendChild(renderResult);
 }
 
 const renderError = function (e) {
     let title = document.createElement('h3');
     title.textContent = "Error : ";
-    title.className = 'record-title error';
+    title.className = 'result-title error';
     let errorChild = document.createElement('p');
     errorChild.className = 'error-message';
     errorChild.textContent = e.message;
-    document.querySelector('.record-title').appendChild(title);
+    document.querySelector('.result-title').appendChild(title);
     document.querySelector('.records').appendChild(errorChild);
 }
 
@@ -116,7 +116,7 @@ const renderExpense = function(){
     document.querySelector('.pic').innerHTML = '';
     document.querySelector('#photoText').innerHTML = '';
     let title = document.createElement('h3');
-    title.className = 'record-title'
+    title.className = 'result-title'
     title.textContent = "Expense summary💰";
     document.querySelector('.result-title').innerHTML = '';
     document.querySelector('.result-title').append(generateSummary());
@@ -130,7 +130,7 @@ const generateSummary = function(){
     let allExp = JSON.parse(localStorage.getItem(curr));
     let totalmoney = 0;
     let sum = document.createElement('h3');
-    sum.className = 'record-title'
+    sum.className = 'result-title'
     allExp.forEach(function(oneExp){
         totalmoney+= oneExp.money;
     });
