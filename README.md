@@ -9,6 +9,7 @@ This is a web app implemented in JavaScript, HTML and CSS that helps you manage 
 - Extract text from users' receipt photos and generte expense records automatically.
 
 ## Working Lists
-- [x] Created a responsive website using HTML and CSS.
+- [x]  Created a responsive website using HTML and CSS.
 - [ ]  Working on OAuth and implementing MongoDB to allow user login and save/fetch their expense records from database
+- [ ]  Adding Babel and Webpack to make web app accessible through different browsers
 - [ ]  Implementing a query engine to extract data from Google Vision API result to help user generate records from receipts
